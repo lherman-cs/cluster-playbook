@@ -1,4 +1,4 @@
 ---
 
-- include: init-config.yml
-- include: setup-storage.yml
+- import_playbook: init-config.yml
+- import_playbook: setup-storage.yml
