@@ -1,0 +1,9 @@
+---
+
+- name: "Installing startup apps"
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - vim
+    - htop
+    - git
+    - rsync
