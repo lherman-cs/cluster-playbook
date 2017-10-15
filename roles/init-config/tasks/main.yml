@@ -1,10 +1,12 @@
 ---
 
 - name: "Installing startup apps"
+  become: yes
   apt: pkg={{ item }} state=installed
   with_items:
+    - openssh-client
+    - openssh-server
     - vim
     - htop
     - git
     - rsync
-    - sshfs

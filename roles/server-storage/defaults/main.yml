@@ -1,0 +1,3 @@
+---
+shared_storage_path: "{{ ansible_env.HOME }}/data"
+shared_storage_src: "/dev/sda"

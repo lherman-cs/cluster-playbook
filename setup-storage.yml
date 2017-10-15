@@ -1,0 +1,9 @@
+---
+
+- hosts: storage
+  roles:
+    - server-storage
+
+- hosts: nodes
+  roles:
+    - client-storage

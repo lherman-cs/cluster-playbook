@@ -1,0 +1,9 @@
+---
+
+- name: "Mount the storage"
+  become: true
+  mount:
+    path: "{{ shared_storage_path }}"
+    src: "{{ shared_storage_src }}"
+    fstype: ext4
+    state: mounted

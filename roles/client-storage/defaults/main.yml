@@ -1,0 +1,6 @@
+---
+
+mount_storage_path: "{{ ansible_env.HOME }}/data"
+host_storage_name: "rock"
+host_storage_path: "data"
+host_storage_src: "{{ host_storage_name }}:{{ host_storage_path }}"

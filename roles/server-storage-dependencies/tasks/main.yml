@@ -1,0 +1,7 @@
+---
+
+- name: "Installing server storage dependencies"
+  become: yes
+  apt: pkg={{ item }} state=installed
+  with_items:
+    - sshfs

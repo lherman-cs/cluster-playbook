@@ -1,0 +1,4 @@
+---
+
+- include: init-config.yml
+- include: setup-storage.yml
